@@ -130,6 +130,7 @@ Euclidean Geometry with PSTricks.
 %doc %{_texmfdistdir}/doc/latex/pst-eucl-translation-bg/pst-eucl-docBG.cb
 %doc %{_texmfdistdir}/doc/latex/pst-eucl-translation-bg/pst-eucl-docBG.pdf
 %doc %{_texmfdistdir}/doc/latex/pst-eucl-translation-bg/pst-eucl-docBG.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -140,3 +141,5 @@ Euclidean Geometry with PSTricks.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
