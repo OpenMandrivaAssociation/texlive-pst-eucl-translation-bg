@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl-translat
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The pst-eucl package documentation in Bulgarian language -
@@ -130,7 +128,6 @@ Euclidean Geometry with PSTricks.
 %doc %{_texmfdistdir}/doc/latex/pst-eucl-translation-bg/pst-eucl-docBG.cb
 %doc %{_texmfdistdir}/doc/latex/pst-eucl-translation-bg/pst-eucl-docBG.pdf
 %doc %{_texmfdistdir}/doc/latex/pst-eucl-translation-bg/pst-eucl-docBG.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -141,5 +138,3 @@ Euclidean Geometry with PSTricks.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
