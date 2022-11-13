@@ -1,18 +1,12 @@
-# revision 19296
-# category Package
-# catalog-ctan /info/translations/pst-eucl/bulgarian
-# catalog-date 2010-07-08 15:45:43 +0200
-# catalog-license fdl
-# catalog-version 1.3.2
 Name:		texlive-pst-eucl-translation-bg
-Version:	1.3.2
-Release:	11
+Version:	19296
+Release:	1
 Summary:	Bulgarian translation of the pst-eucl documentation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/translations/pst-eucl/bulgarian
 License:	FDL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl-translation-bg.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl-translation-bg.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl-translation-bg.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl-translation-bg.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -131,24 +125,10 @@ Euclidean Geometry with PSTricks.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3.2-2
-+ Revision: 755269
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.3.2-1
-+ Revision: 719347
-- texlive-pst-eucl-translation-bg
-- texlive-pst-eucl-translation-bg
-- texlive-pst-eucl-translation-bg
-- texlive-pst-eucl-translation-bg
-
