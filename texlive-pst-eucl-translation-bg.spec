@@ -1,6 +1,6 @@
 Name:		texlive-pst-eucl-translation-bg
 Version:	19296
-Release:	1
+Release:	2
 Summary:	Bulgarian translation of the pst-eucl documentation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/translations/pst-eucl/bulgarian
