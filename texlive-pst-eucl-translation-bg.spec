@@ -3,7 +3,7 @@ Version:	19296
 Release:	2
 Summary:	Bulgarian translation of the pst-eucl documentation
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/translations/pst-eucl/bulgarian
+URL:		https://www.ctan.org/tex-archive/info/translations/pst-eucl/bulgarian
 License:	FDL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl-translation-bg.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl-translation-bg.doc.r%{version}.tar.xz
